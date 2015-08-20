@@ -106,6 +106,12 @@ func (dateSent DateSent) GetParam() (string, string) {
 	return "DateSent", string(dateSent)
 }
 
+type DateSentAfter string
+
+func (dateSentAfter DateSentAfter) GetParam() (string, string) {
+	return "DateSent>", string(dateSentAfter)
+}
+
 type Body string
 
 func (body Body) GetParam() (string, string) {
